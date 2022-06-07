@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="/index.js"></script>
+    <title>Vismai Mhatre - Innovator, Problem Solver</title>
+    <style>
+        @media screen and (max-width:1210px) {
+            .infoContainer {
+                width: 800px;
+                height: 550px;
+            }
+        }
+        @media screen and (max-width:900px) {
+            .infoContainer {
+                width: 700px;
+                height: 500px;
+            }
+
+            .devPic img {
+                padding: 30px;
+                height: 300px;
+            }
+
+            .btn {
+                margin: 8px;
+            }
+        }
+        @media screen and (max-width:774px) {
+            .menu{
+                display: none;
+            }
+            .hamburger{
+                display: block;
+            }
+            .navbar{
+                flex-direction: column-reverse;
+                justify-content: right;
+                align-items: flex-end;
+            }
+            .infoContainer {
+                flex-direction: column;
+                flex-flow: column-reverse;
+                align-items: center;
+                margin: 120px auto;
+                width: 350px;
+                height: 550px;
+            }
+            .devInfo {
+                padding: 20px;
+            }
+            .hello {
+                font-size: 24px;
+            }
+            .name {
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .about {
+                font-size: 18px;
+            }
+            .moreabout {
+                font-size: 14px;
+            }
+            .devPic img {
+                padding: 5px;
+                height: 200px;
+            }
+            .btn {
+                margin: 4px;
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+        }
+        @media screen and (max-width:385px) {
+            .infoContainer {
+                margin: 120px auto;
+                width: 220px;
+                height: 550px;
+            }
+            .devInfo {
+                padding: 10px;
+            }
+            .hello {
+                font-size: 18px;
+            }
+            .name {
+                font-size: 22px;
+                font-weight: bold;
+            }
+            .about {
+                font-size: 16px;
+            }
+            .moreabout {
+                font-size: 14px;
+            }
+            .devPic img {
+                padding: 5px;
+                height: 160px;
+            }
+            .btn {
+                margin: 4px;
+                font-size: 12px;
+                padding: 5px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul class="menu" id="oldmenu">
+                <li class="active"><a href="/index.html">Home</a></li>
+                <li><a href="/aboutme.html">About Me</a></li>
+                <li><a href="/education.html">Education</a></li>
+                <li><a href="/contactdetails.html">Contact Me</a></li>
+            </ul>
+            <div class="hamburger" id="oldham" onclick="shownav()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="infoContainer">
+                <div class="devInfo">
+                    <div class="hello">Hi, my name is</div>
+                    <div class="name">Vismai Mhatre</div>
+                    <div class="about">Creative, Problem Solver, Quick Learner</div>
+                    <div class="moreabout">I am an innovative person and I enjoy designing a web page and not only that
+                        I am aslo good when it comes to programming.</div>
+                    <div class="buttons">
+                        <button class="btn"><a href="/Final CV.pdf" target="_blank">Download CV</a></button>
+                        <button class="btn"><a href="/contactdetails.html">Contact Me</a></button>
+                    </div>
+                </div>
+                <div class="devPic"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQY9OL38FHPKucWTlkXqHdwd4__RhbYgEOIw&usqp=CAU"
+                        alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

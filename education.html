@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="/index.js"></script>
+    <title>Vismai Mhatre - Innovator, Problem Solver</title>
+    <style>
+        @media screen and (max-width:774px) {
+            .menu{
+                display: none;
+            }
+            .hamburger{
+                display: block;
+            }
+            .navbar{
+                flex-direction: column-reverse;
+                justify-content: right;
+                align-items: flex-end;
+            }
+        }
+        @media screen and (max-width:770px) {
+            #box1, #box2, #box3 {
+                width: 440px;
+                margin: 20px;
+            }
+            .course {
+                font-size: 28px;
+                padding: 6px;
+            }
+            .board {
+                font-size: 20px;
+                padding-left: 3px;
+            }
+            .clg {
+                font-size: 18px;
+                padding-left: 3px;
+            }
+            .year {
+                font-size: 16px;
+                padding-left: 3px;
+            }
+            .cgpa {
+                font-size: 16px;
+                padding-left: 3px;
+                padding-bottom: 5px;
+            }
+        }
+        @media screen and (max-width:460px) {
+            #box1, #box2, #box3 {
+                width: 250px;
+                margin: 10px;
+            }
+            .course {
+                font-size: 22px;
+                padding: 4px;
+            }
+            .board {
+                font-size: 18px;
+                padding-left: 2px;
+            }
+            .clg {
+                font-size: 16px;
+                padding-left: 2px;
+            }
+            .year {
+                font-size: 14px;
+                padding-left: 2px;
+            }
+            .cgpa {
+                font-size: 14px;
+                padding-left: 2px;
+                padding-bottom: 5px;
+            }
+            .projects {
+                padding: 10px;
+            }
+            .head {
+                font-size: 30px;
+            }
+            .projects ul {
+                padding: 6px 30px;
+            }
+            .pname {
+                font-size: 22px;
+            }
+            .pinfo {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="econtainer">
+        <div class="navbar">
+            <ul class="menu" id="oldmenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutme.html">About Me</a></li>
+                <li class="active"><a href="/education.html">Education</a></li>
+                <li><a href="/contactdetails.html">Contact Me</a></li>
+            </ul>
+            <div class="hamburger" id="oldham" onclick="shownav()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        </div>
+        <div class="allinfo">
+            <div id="box1">
+                <div class="course">B.E. in Mechanical Engineering</div>
+                <div class="board">University: Mumbai University</div>
+                <div class="clg">Lokmanya Tilak College Of Engineering</div>
+                <div class="year">2017 - 2020</div>
+                <div class="cgpa">CGPA : 7.75</div>
+            </div>
+            <div id="box2">
+                <div class="course">Diploma in Mechanical Engineering</div>
+                <div class="board">Maharashtra State Board Of Technical Education</div>
+                <div class="clg">Saraswati Education Society</div>
+                <div class="year">2014 - 2017</div>
+                <div class="cgpa">Percentage: 79.29%</div>
+            </div>
+            <div id="box3">
+                <div class="course" style="font-size: 52px;">SSC</div>
+                <div class="board">Maharashtra State Board</div>
+                <div class="clg">Little Angles high School</div>
+                <div class="year">2014 Passout</div>
+                <div class="cgpa">Percentage: 84.5%</div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="head">MY PROJECTS</div>
+            <hr>
+            <ul>
+                <li>
+                    <div class="details">
+                        <div class="pname">Responsive Web Design (RWD) : </div>
+                        <div class="pinfo">
+                            Created a Responsive Web Design (RWD) of a furniture shop which can render or can be
+                            displayed on all types of devices by automatically adapting to the screen size whether it is
+                            a desktop, laptop or a smartphone.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="details">
+                        <div class="pname">Cricket Game Using Python Programming : </div>
+                        <div class="pinfo">
+                            Made a Cricket game using Python Programming which is played using numbers against the
+                            computer which starts with a toss and lets the winner choose whether to bat first or ball
+                            first and the game continues accordingly. It includes every possibility like no-ball and
+                            freehit. The program never stops when error occurs because of the use of exceptional
+                            handling.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="details">
+                        <div class="pname">Sample Website using Angular : </div>
+                        <div class="pinfo">
+                            Created a sample Web page using Angular for Framework in which I have used Custom pipes to
+                            filte the data taken from an API, Services, Auth Guard to stop direct access of data,
+                            transferred data through URL and also used LazyLoading to make web page load faster.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

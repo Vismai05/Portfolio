@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.hamburger{
+    display: none;
+    height: 33px;
+    width: 34px;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    display: block;
+    background-color: aliceblue;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+#bar2{
+    transform: translateY(6px);
+}
+#bar3{
+    transform: translateY(12px);
+}
+.cross #bar1{
+    transform: translateY(12px) rotate(-45deg);
+}
+.cross #bar2{
+    opacity: 0;
+}
+.cross #bar3{
+    transform: translateY(2px) rotate(45deg);
+}
+
+.navbar{
+    background-color:rgba(0, 0, 0, 0.675);
+    height: 100%;
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    justify-content: right;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    font-size: 22px;
+    padding: 20px 30px;
+}
+.menu li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu li a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+.menu .active{
+    text-decoration: underline;
+}
+
+.navbar .new{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    width: 250px;
+    height: 100vh;
+    margin: auto;
+    z-index: 100;
+}
+.new li{
+    list-style: none;
+    font-size: 26px;
+    padding: 40px 0px;
+}
+.new li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.new li a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+
+/* Home Page */
+.main{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 104vh;
+    z-index: -1;
+}
+.infoContainer{
+    background-color: white;
+    box-shadow: 12px 12px 26px 10px gray;
+    margin: 120px auto;
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+}
+.devPic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.devPic img{
+    padding: 40px;
+    height: 450px;
+}
+.hello{
+    font-size: 40px;
+}
+.name{
+    font-size: 45px;
+    font-weight: bold;
+}
+.about{
+    font-size: 28px;
+}
+.moreabout{
+    font-size: 20px;
+}
+.btn{
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: deepskyblue;
+    color: azure;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+.btn a{
+    text-decoration: none;
+    color: azure;
+}
+.buttons{
+    padding-top: 6px;
+}
+.devInfo div{
+    margin: 3px 0px;
+}
+.btn:hover{
+    background-color: royalblue;
+}
+.container{
+    background-color: gainsboro;
+}
+
+/* Education Details */
+.allinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box1, #box2, #box3{
+    width: 750px;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    background-color: #f5f5f5c2;
+    margin: 36px;
+    color: #c40000;
+    position: relative;
+}
+#box1{
+    animation-name: slider;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+#box2{
+    animation-name: slider;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+#box3{
+    animation-name: slider;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+@keyframes slider {
+    0%{
+        left: 700px;
+        opacity: 0;
+    }
+    30%{opacity: 0.3;}
+    30%{opacity: 0.6;}
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+.course{
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    font-size: 38px;
+    padding: 10px;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    overflow: hidden;
+}
+.board{
+    font-size: 28px;
+    padding-left: 5px;
+}
+.clg{
+    font-size: 25px;
+    padding-left: 5px;
+}
+.year{
+    font-size: 20px;
+    padding-left: 5px;
+}
+.cgpa{
+    font-size: 20px;
+    padding-left: 5px;
+    padding-bottom: 8px;
+}
+
+.projects{
+    border: 2px solid black;
+    background-color: #f5f5f5c2;
+    width: 70vw;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.head{
+    font-size: 40px;
+}
+.projects ul{
+    padding: 12px 60px;
+}
+.pname{
+    font-size: 25px;
+    margin-top: 10px;
+    color: mediumvioletred;
+}
+.pinfo{
+    font-size: 18px;
+    color: sienna;
+}
+.econtainer::before{
+    content: "";
+    background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZWR1Y2F0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 205vh;
+    width: 100%;
+    z-index: -4;
+    opacity: 0.8;
+}
+
+/* Contact Me */
+.contactme{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 0px 20px 20px 20px;
+    margin: 60px 0px;
+    box-shadow: 8px 12px 50px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: white;
+}
+.mydetails{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+}
+.myinfo{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 40px 10px 0px;
+    font-size: 20px;
+}
+.myinfo img{
+    padding-right: 30px;
+}
+legend{
+    font-size: 50px;
+}
+.decimg img{
+    width: 500px;
+    margin: 70px 50px 70px 40px;
+}
+.Ccontainer::before{
+    content: "";
+    background-color: gainsboro;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 101vh;
+    z-index: -5;
+}
+
+/* about me */
+.aboutme{
+    display: flex;
+    width: 90vw;
+    height: 710px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 5px 1px grey;
+    background-color: white;
+}
+.lside img{
+    height: 710px;
+}
+.rside{
+    padding: 55px;
+}
+.head2{
+    font-size: 38px;
+    padding-bottom: 5px;
+    color: rgb(174, 174, 174);
+    position: relative;
+    animation-name: slider2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.head3{
+    font-size: 50px;
+    padding: 5px 0px;
+    color: crimson;
+    position: relative;
+    animation-name: slider2;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.content{
+    font-size: 20px;
+    padding: 10px 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    animation-name: slider2;
+    animation-duration: 2.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    margin-bottom: 20px;
+}
+@keyframes slider2 {
+    0%{
+        left: 500px;
+        opacity: 0;
+    }
+    30%{opacity: 0.3;}
+    30%{opacity: 0.6;}
+    100%{
+        left: 0px;
+        opacity: 1;
+    }
+}
+.skills p{
+    margin-top: 20px;
+    font-size: 40px;
+    color: blueviolet;
+    position: relative;
+    animation: raise;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+.skills ul{
+    font-size: 20px;
+    padding: 8px 32px;
+}
+.skills ul li{
+    padding: 4px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    animation: raise;
+    animation-duration: 3.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+@keyframes raise {
+    0%{
+        top: 300px;
+        opacity: 0;
+    }
+    30%{opacity: 0.3;}
+    60%{opacity: 0.6;}
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+.acontainer::before{
+    content: "";
+    background-color: gainsboro;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 120vh;
+    width: 100%;
+    z-index: -1;
+}

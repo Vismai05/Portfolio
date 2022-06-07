@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="/index.js"></script>
+    <title>Vismai Mhatre - Innovator, Problem Solver</title>
+    <style>
+        @media screen and (max-width:1332px) {
+            .aboutme {
+                height: 600px;
+            }
+            .lside img {
+                height: 600px;
+            }
+            .head2{
+                font-size: 32px;
+            }
+            .head3{
+                font-size: 40px;
+            }
+            .content{
+                font-size: 16px;
+            }
+            .skills p{
+                font-size: 34px;
+            }
+            .skills ul{
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width:1192px) {
+            .aboutme {
+                height: 550px;
+            }
+            .rside{
+                padding: 60px;
+            }
+            .lside img {
+                height: 550px;
+            }
+            .head2{
+                font-size: 28px;
+            }
+            .head3{
+                font-size: 35px;
+            }
+            .content{
+                font-size: 14px;
+            }
+            .skills p{
+                font-size: 20px;
+            }
+            .skills ul{
+                font-size: 14px;
+                padding: 20px 0px 20px 26px;
+            }
+            .skills ul li{
+                padding: 4px;
+            }
+        }
+        @media screen and (max-width:1080px) {
+            .rside{
+                padding: 40px;
+            }
+            .skills ul{
+                font-size: 14px;
+                padding: 8px 0px 8px 26px;
+            }
+        }
+        @media screen and (max-width:925px) {
+            .rside{
+                padding: 10px;
+            }
+            .skills ul{
+                font-size: 14px;
+                padding: 0px 0px 0px 26px;
+            }
+            .skills ul li{
+                padding: 2px;
+            }
+        }
+        @media screen and (max-width:774px) {
+            .menu{
+                display: none;
+            }
+            .hamburger{
+                display: block;
+            }
+            .navbar{
+                flex-direction: column-reverse;
+                justify-content: right;
+                align-items: flex-end;
+            }
+        }
+        @media screen and (max-width:742px) {
+            .aboutme {
+                height: 400px;
+            }
+            .lside img {
+                height: 400px;
+            }
+            .rside{
+                padding: 8px;
+            }
+            .head2{
+                font-size: 22px;
+            }
+            .head3{
+                font-size: 26px;
+            }
+            .content{
+                font-size: 12px;
+                margin-bottom: 6px;
+            }
+            .skills p{
+                font-size: 16px;
+                margin-top: 6px;
+            }
+            .skills ul{
+                font-size: 12px;
+                padding: 0px 0px 0px 26px;
+            }
+            .skills ul li{
+                padding: 2px;
+            }
+        }
+        @media screen and (max-width:669px) {
+            .aboutme {
+                height: 500px;
+            }
+            .lside img {
+                height: 500px;
+            }
+        }
+        @media screen and (max-width:608px) {
+            .aboutme {
+                height: 505px;
+            }
+            .head2{
+                padding: 0px;
+                margin: 0px;
+            }
+            .head3{
+                padding: 0px;
+                margin: 0px;
+            }
+            .content{
+                margin-bottom: 2px;
+                padding: 0px;
+            }
+            .skills ul li{
+                padding: 0px;
+            }
+            .lside img {
+                height: 505px;
+                width: 250px;
+            }
+        }
+        @media screen and (max-width:479px) {
+            .lside{display: none;}
+            .aboutme {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="acontainer">
+        <div class="navbar">
+            <ul class="menu" id="oldmenu">
+                <li><a href="/index.html">Home</a></li>
+                <li class="active"><a href="/aboutme.html">About Me</a></li>
+                <li><a href="/education.html">Education</a></li>
+                <li><a href="/contactdetails.html">Contact Me</a></li>
+            </ul>
+            <div class="hamburger" id="oldham" onclick="shownav()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        </div>
+        <div class="aboutme">
+            <div class="lside"><img
+                    src="https://images.pexels.com/photos/4841641/pexels-photo-4841641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""></div>
+            <div class="rside">
+                <div class="head2">About Me</div>
+                <div class="head3">Who Am I ?</div>
+                <div class="content">
+                    Hi! I'm Vismai Mhatre an innovative and meticulous person and also a B.E. Graduate. I'm currently
+                    completeing a Post Graduate course in Python Development from I.T.Vedant and till now I have learnt
+                    Python programming, Web designing (HTML, CSS and Javascript) and Angular framework. During this
+                    course I have seen that I'm good in web designing as well as programming so I'm currently looking
+                    for a entry-level position as a Web Developer in a well known firm and explore my web development
+                    skills and improve my knowledge and enhance my professional skills in a stable workplace.
+                </div>
+                <hr>
+                <div class="skills">
+                    <p>Skills</p>
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
